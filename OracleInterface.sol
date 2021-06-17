@@ -4,11 +4,12 @@ contract OracleInterface {
  
 
     function getVerification(bytes32 _verificationId) public view returns (
-        bytes32 id,
+        bytes32 id, 
         string name, 
-        uint date, 
-        uint result);
-
+        string project, 
+        uint date,                      
+        VerificationOutcome outcome,    
+        uint percentage);
 
     function testConnection() public pure returns (bool);
 
