@@ -2,7 +2,7 @@ pragma solidity ^0.4.17;
 
 contract OracleInterface {
  
-    function matchExists(bytes32 _matchId) public view returns (bool); 
+    function matchExists(bytes32 _verificationId) public view returns (bool); 
     
     function getVerification(bytes32 _verificationId) public view returns (
         string name, 
