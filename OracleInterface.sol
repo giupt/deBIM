@@ -2,7 +2,7 @@ pragma solidity ^0.4.17;
 
 contract OracleInterface {
  
-    function getVerification(uint _id) public view returns (
+    function getVerification(bytes32 _id) public view returns (
         string name, 
         string project, 
         uint date,   
